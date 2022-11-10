@@ -1,0 +1,282 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --black: #000;
+  --dkteal: #002F2F; /*dkblue*/
+  --sandy: #E6E2AF; /*magenta*/
+  --beach: #EFECCA; /*hotmag*/
+  --stone: #A7A37E; /*plum*/
+  --ocean: #046380; /*aqua*/
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* generic styles for the page */
+body {
+padding: 0;
+margin: 0;
+font-family: var(--sans);
+background-color: var(--black);
+color: var(--white);
+font-size: var(--font-size);
+}
+
+h1, h2, h3, h4 {
+margin: 0;
+}
+
+a {
+color: var(--sandy);
+}
+a:hover {
+color: var(--beach);
+text-decoration: none;
+}
+
+.gradient{
+  background: linear-gradient(90deg, rgba(230,226,175,1) 0%, rgba(4,99,128,1) 100%);
+  height: 3px;
+}
+
+/* navbar */
+
+nav {
+font-family: var(--mono);
+font-size: 80%;
+padding: 1rem;
+}
+
+nav h1 a {
+font-family: var(--sans);
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-flow: row wrap; 
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+
+nav li:first-child {
+flex-basis: 100%;
+text-align: center;
+}
+
+nav [class*="fa-"] {
+font-size: 150%;
+color: var(--ocean);
+}
+
+nav h1 [class*= "fa-"] {
+font-size: 100%;
+}
+
+nav a {
+color: var(--white);
+text-decoration: none;
+display: block;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+color: var(--sandy);
+}
+
+.button {
+background-color: var(--sandy);
+color: var(--black);
+padding: 0.5rem;
+border-radius: 5px;
+font-family: var(--mono);
+text-decoration: none;
+}
+
+.button:hover {
+color: var(--black);
+background-color: var(--beach);
+}
+
+/* intro styles*/
+
+#intro {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#intro p {
+font-size: 1rem;
+line-height: 1.5;
+}
+
+#intro .name {
+font-family: var(--mono);
+}
+
+.name span {
+font-family: var(--sans);
+font-size: 4rem;
+color: var(--ocean);
+display: block;
+}
+
+#intro h2 {
+font-size: 4rem;
+}
+
+/* Projects section */
+.section-project {
+  background-color: var(--dkteal);
+}
+
+#projects {
+  padding: 4rem 1rem;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+  color: var(--ocean);
+}
+
+#projects h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+}
+
+.blackbox {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+#projects img {
+  margin: 2rem 0 4rem 0;
+  border-left: 2px solid var(--ocean);
+  border-top: 2px solid var(--ocean);
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* projects responsive design */
+@media (min-width: 550px){
+  article {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 1rem;
+  }
+  #projects img {
+    grid-column: 1/6; /*number of spaces item contains*/
+    grid-row: 1/2;
+  }
+  .text {
+    order: 2; /*flips image and text left-right*/
+    text-align: right;
+    grid-column: 5/11;
+    grid-row: 1/2;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+
+  #projects .reverse img {
+    grid-column: 6/11;
+    border-right: 2px solid var(--ocean);
+    border-left: none;
+  }
+  .reverse .text {
+    grid-column: 1/7;
+    text-align: left;
+  }
+
+  #projects .reverse ul {
+    justify-content: flex-start;
+  }
+
+
+
+}
+
+/*contact section */
+
+#contact {
+text-align: center;
+background-color: var(--stone);
+padding: 3rem 0;
+  
+}
+
+#contact p {
+width: 400px;
+margin: 0 auto;
+font-size: 1rem;
+padding: 15px;
+}
+
+/* Footer section*/
+
+footer {
+text-align: center;
+padding: 4rem 0;
+}
+
+footer ul {
+list-style-type: none;
+display: flex;
+flex-flow: row wrap; 
+justify-content: center;
+gap: 3rem;
+padding: 0;
+margin: 2rem 0;
+font-size: 3rem;
+}
+
+/* responsive design */
+
+@media (min-width: 800px){
+
+  nav, .projects {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}

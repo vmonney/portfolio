@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&amp;family=Oxygen+Mono&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Valentin Monney's Portfolio Website</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li>
+        <h1>
+          <a href="index.html">
+            <span class="fa-solid fa-code"></span>
+            <span>Valentin Monney</span>
+          </a>
+      </h1>
+      </li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank">
+        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+        <span class="sr-only">LinkedIn</span> <!-- This class "sr-only" comes from the fontawesome parameters -->
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/vmonney" target="_blank">
+        <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+        <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li><a href="https://www.dropbox.com/s/daixna0zchfdsso/Valentin%27s%20Resume.pdf?dl=0" target="_blank" class="button">Resume</a></li>
+    </ul>
+  </nav>
+  
+  <section id="intro">
+    <p class="name">Hi, my name is <span>Valentin Monney.</span></p>
+    <h2>I design web data pipelines, from database to visualizations.</h2>
+    <p> I'm a developper specializing in R, Python and Javascript.</p>
+    <p> Currently, I'm working as Data Scientist for the <a href="https://www.fr.ch/deef/sstat" target="_blank">Statistical services</a> of the canton of Fribourg in Switzerland.</p>
+  </section>
+
+  <div class="gradient"></div>
+
+  <div class="section-project">
+    <section id="projects">
+      <h2>Projects I'm proud of</h2>
+
+      <article>
+        <div class="text">
+          <h4>Latest Project</h4>
+          <h3>Wordle Game</h3>
+          <p class="blackbox">This is a game I created based on the same concept as the famous game Wordle, acquired for more than 1 million dollars by the New York Times. <a href="https://vmonney.github.io/wordle" target="_blank">Test it out Here!</a> If you want the New York Times version: <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">check this out</a>. 
+          </p>
+          <h4>Technologies used include:</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <img src="img/wordle.png" alt="Screenshot of the game Wordle" />
+      </article>
+      <article class="reverse">
+        <div class="text">
+          <h4>Interactive Dashboard Project</h4>
+          <h3>Price evolution in Switzerland</h3>
+          <p class="blackbox">This App is a dashboard to show the price evolutions in Switzerland in different areas (Consumption, Production, Constrution and Rental) as well as European comparison. Check this yourself here: <a href="https://monneyvalentin.shinyapps.io/fsoapp/" target="_blank">FSO APP</a>. 
+          </p>
+          <h4>Technologies used include:</h4>
+          <ul>
+            <li>R</li>
+            <li>Shiny</li>
+          </ul>
+        </div>
+        <img src="img/FSOapp.png" alt="Screenshot of the Price Dashboard App" />
+      </article>
+      <article>
+        <div class="text">
+          <h4>Machine Learning Project</h4>
+          <h3>Distinguish the sick from the healthy in South Africa</h3>
+          <p class="blackbox">Here we used machine learning tools to learn from a questionnaire and helps to identify who needs urgent care and who can still wait. You can access the whole process <a href="https://github.com/vmonney/Python/tree/main/EPFL%20machine%20Learning%20Projects/05_Capstone_project" target="_blank">here</a>. 
+          </p>
+          <h4>Technologies used include:</h4>
+          <ul>
+            <li>Python</li>
+            <li>Jupyter Notebook</li>
+          </ul>
+        </div>
+        <img src="img/Machine Learning.png" alt="Screenshot of a part of the Jupyter notebook." />
+      </article>
+    </section>
+  </div>
+  <div class="gradient"></div>
+
+  <section id="contact">
+    <h3>Contact me</h3>
+    <p>I'm always interested in hearing about new design opportunities, new challenges or just talk about data.</p>
+    <a href="mailto: monney.valentin@gmail.com" class="button">Email me</a>
+  </section>
+  
+  <div class="gradient"></div>
+  
+  <footer>
+  <h3>Valentin Monney &middot; Data Scientist</h3>
+  <ul>
+    <li>
+        <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank">
+        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+        <span class="sr-only">LinkedIn</span>
+        </a>
+    </li>
+    <li>
+      <a href="https://github.com/vmonney" target="_blank">
+        <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+        <span class="sr-only">Github</span>
+      </a>
+    </li>
+    <li>
+      <a href="mailto: monney.valentin@gmail.com">
+        <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+        <span class="sr-only">Email</span>
+      </a>
+    </li>
+  </ul>
+    <p><small>&copy; 2022 Valentin Monney. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html>
