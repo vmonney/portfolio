@@ -6,134 +6,337 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&amp;family=Oxygen+Mono&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;family=Oxygen+Mono&amp;display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Valentin Monney's Portfolio Website</title>
+  <title>Valentin Monney | Data Scientist &amp; OGD Lead</title>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
-    <ul>
-      <li>
-        <h1>
-          <a href="index.html">
-            <span class="fa-solid fa-code"></span>
-            <span>Valentin Monney</span>
+  <header>
+    <nav class="container">
+      <ul>
+        <li>
+          <h1>
+            <a href="#intro">
+              <span class="fa-solid fa-database" aria-hidden="true"></span>
+              <span>Valentin Monney</span>
+            </a>
+          </h1>
+        </li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only">LinkedIn</span>
           </a>
-      </h1>
-      </li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank">
-        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-        <span class="sr-only">LinkedIn</span> <!-- This class "sr-only" comes from the fontawesome parameters -->
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/vmonney" target="_blank">
-        <span class="fa-brands fa-square-github" aria-hidden="true"></span>
-        <span class="sr-only">Github</span>
-        </a>
-      </li>
-      <li><a href="https://www.dropbox.com/s/daixna0zchfdsso/Valentin%27s%20Resume.pdf?dl=0" target="_blank" class="button">Resume</a></li>
-    </ul>
-  </nav>
-  
-  <section id="intro">
-    <p class="name">Hi, my name is <span>Valentin Monney.</span></p>
-    <h2>I design web data pipelines, from database to visualizations.</h2>
-    <p> I'm a developper specializing in R, Python and Javascript.</p>
-    <p> Currently, I'm working as Data Scientist for the <a href="https://www.fr.ch/deef/sstat" target="_blank">Statistical services</a> of the canton of Fribourg in Switzerland.</p>
-  </section>
+        </li>
+        <li>
+          <a href="https://github.com/vmonney" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.dropbox.com/scl/fi/iniqycecxhkr7tvbpob9m/Valentin-s-Resume.pdf?rlkey=267fvfzl6abnnce9t6rhfwpyq&st=pgi5zhh5&dl=0" target="_blank" rel="noreferrer" class="button">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="gradient"></div>
+  <main id="main-content">
+    <section id="intro" class="hero container">
+      <p class="eyebrow">Data Scientist / OGD Lead</p>
+      <h2>Modernizing public data systems into trusted insights and decisions.</h2>
+      <p class="lead">
+        I design and deliver end-to-end data solutions, from ETL and quality controls to governance-ready models and business-facing dashboards.
+      </p>
+      <p class="context">
+        Currently working as a Data Scientist for the
+        <a href="https://www.fr.ch/deef/sstat" target="_blank" rel="noreferrer">Statistical Services</a>
+        of the canton of Fribourg, Switzerland.
+      </p>
+      <div class="hero-cta">
+        <a class="button" href="#projects">View projects</a>
+        <a class="button-secondary" href="mailto:monney.valentin@gmail.com">Get in touch</a>
+      </div>
+    </section>
 
-  <div class="section-project">
-    <section id="projects">
-      <h2>Projects I'm proud of</h2>
+    <div class="gradient"></div>
 
-      <article>
-        <div class="text">
-          <h4>Latest Project</h4>
-          <h3>Wordle Game</h3>
-          <p class="blackbox">This is a game I created based on the same concept as the famous game Wordle, acquired for more than 1 million dollars by the New York Times. <a href="https://vmonney.github.io/wordle" target="_blank">Test it out Here!</a> If you want the New York Times version: <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">check this out</a>. 
-          </p>
-          <h4>Technologies used include:</h4>
+    <section id="profile" class="section container">
+      <h2>Professional Profile</h2>
+      <div class="panel">
+        <p>
+          Data Scientist and OGD Lead with a hands-on focus on public-sector data modernization,
+          analytics engineering, and dashboard delivery.
+        </p>
+        <p>
+          My approach combines technical implementation and strategy: automate what is repetitive, enforce data quality,
+          and make complex data understandable for both technical and non-technical stakeholders.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Core Skills</h2>
+      <div class="skills-grid">
+        <article class="panel">
+          <h3>Data Engineering</h3>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
+            <li>Batch data ingestion and transformation pipelines</li>
+            <li>Dimensional modeling and analytics-ready datasets</li>
+            <li>Data quality validation and monitoring</li>
           </ul>
-        </div>
-        <img src="img/wordle.png" alt="Screenshot of the game Wordle" />
-      </article>
-      <article class="reverse">
-        <div class="text">
-          <h4>Interactive Dashboard Project</h4>
-          <h3>Price evolution in Switzerland</h3>
-          <p class="blackbox">This App is a dashboard to show the price evolutions in Switzerland in different areas (Consumption, Production, Constrution and Rental) as well as European comparison. Check this yourself here: <a href="https://monneyvalentin.shinyapps.io/fsoapp/" target="_blank">FSO APP</a>. 
-          </p>
-          <h4>Technologies used include:</h4>
+        </article>
+        <article class="panel">
+          <h3>Analytics &amp; BI</h3>
           <ul>
-            <li>R</li>
-            <li>Shiny</li>
+            <li>KPI design and metric definition</li>
+            <li>Dashboard development for decision support</li>
+            <li>Exploratory analysis and trend interpretation</li>
           </ul>
-        </div>
-        <img src="img/FSOapp.png" alt="Screenshot of the Price Dashboard App" />
-      </article>
-      <article>
-        <div class="text">
-          <h4>Machine Learning Project</h4>
-          <h3>Distinguish the sick from the healthy in South Africa</h3>
-          <p class="blackbox">Here we used machine learning tools to learn from a questionnaire and helps to identify who needs urgent care and who can still wait. You can access the whole process <a href="https://github.com/vmonney/Python/tree/main/EPFL%20machine%20Learning%20Projects/05_Capstone_project" target="_blank">here</a>. 
-          </p>
-          <h4>Technologies used include:</h4>
+        </article>
+        <article class="panel">
+          <h3>Programming</h3>
           <ul>
             <li>Python</li>
-            <li>Jupyter Notebook</li>
+            <li>R</li>
+            <li>SQL, JavaScript, HTML/CSS</li>
           </ul>
-        </div>
-        <img src="img/Machine Learning.png" alt="Screenshot of a part of the Jupyter notebook." />
-      </article>
+        </article>
+        <article class="panel">
+          <h3>Data Governance &amp; Leadership</h3>
+          <ul>
+            <li>Open Government Data (OGD) strategy and enablement</li>
+            <li>Data governance and publication standards</li>
+            <li>Team mentoring and cross-functional collaboration</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Modern Data Stack</h3>
+          <ul>
+            <li>DuckDB, dbt, Soda Core, Prefect</li>
+            <li>AWS, Azure DevOps, Docker</li>
+            <li>Power BI, Datawrapper, Huwise, Shiny</li>
+          </ul>
+        </article>
+      </div>
     </section>
-  </div>
-  <div class="gradient"></div>
 
-  <section id="contact">
-    <h3>Contact me</h3>
-    <p>I'm always interested in hearing about new design opportunities, new challenges or just talk about data.</p>
-    <a href="mailto: monney.valentin@gmail.com" class="button">Email me</a>
-  </section>
-  
-  <div class="gradient"></div>
-  
+    <div class="gradient"></div>
+
+    <section id="projects" class="section section-dark">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <img src="img/olist-analytics.png" alt="Architecture and dashboard overview of the Olist analytics platform project.">
+            <div class="project-content">
+              <p class="project-label">Flagship Analytics Engineering Project</p>
+              <h3>Olist Analytics Data Platform</h3>
+              <p>
+                End-to-end analytics engineering project built on the Brazilian Olist e-commerce dataset
+                (100k+ orders, 8 source tables), covering ingestion, layered quality checks, dbt modeling,
+                orchestration, and BI delivery.
+              </p>
+              <p class="impact">
+                <strong>Impact:</strong> Demonstrates a production-style workflow that improves data trust,
+                accelerates reporting, and provides reusable modeled datasets for analysis.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>DuckDB</li>
+                <li>dbt</li>
+                <li>Soda Core</li>
+                <li>Dagster</li>
+                <li>Evidence</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://github.com/vmonney/data-engineering-olist-analytics" target="_blank" rel="noreferrer">GitHub repository</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="img/portrait-communes2.png" alt="Indicator visualization page from the Portrait des communes platform.">
+            <div class="project-content">
+              <p class="project-label">Public Sector Data Pipeline</p>
+              <h3>Portrait of Fribourg Communes</h3>
+              <p>
+                Built an end-to-end pipeline at the Statistical Office to publish indicators for the communes of Fribourg:
+                from CSV source files to automated ingestion with Azure DevOps, Python transformations, and Control-M orchestration.
+                Huwise was used to manage metadata, data publication, and visualization delivery.
+              </p>
+              <p class="impact">
+                <strong>Impact:</strong> Improves reliability and timeliness of municipal indicators through a repeatable and automated publication workflow.
+              </p>
+              <ul class="tag-list">
+                <li>CSV</li>
+                <li>Azure DevOps</li>
+                <li>Python</li>
+                <li>Control-M</li>
+                <li>Huwise</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://opendata.fr.ch/pages/portrait-communes-fribourg/" target="_blank" rel="noreferrer">Live platform</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="img/causesdeces.png" alt="Power BI dashboard showing causes of death trends in the canton of Fribourg.">
+            <div class="project-content">
+              <p class="project-label">Public Health Analytics Dashboard</p>
+              <h3>Causes of Death Dashboard (Canton of Fribourg)</h3>
+              <p>
+                Designed and built a Power BI dashboard from a Microsoft SQL Server data source to analyze causes of death in the canton of Fribourg.
+                The project included data transformation and structuring steps to make the dataset analytics-ready for reporting.
+              </p>
+              <p class="impact">
+                <strong>Impact:</strong> Provides a clearer view of mortality patterns over time and supports evidence-based interpretation for public-sector analysis.
+              </p>
+              <ul class="tag-list">
+                <li>Power BI</li>
+                <li>MS SQL Server</li>
+                <li>Data Transformation</li>
+                <li>Dashboard Design</li>
+              </ul>
+              <p class="project-links">
+                Internal work project - no public link available.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="img/FSOapp.png" alt="Swiss price evolution dashboard built with R Shiny.">
+            <div class="project-content">
+              <p class="project-label">Interactive Analytics Dashboard</p>
+              <h3>Price Evolution in Switzerland</h3>
+              <p>
+                Built an interactive dashboard to track price trends across consumption, production, construction, and rental segments,
+                with additional European comparisons.
+              </p>
+              <p class="impact">
+                <strong>Impact:</strong> Supports quicker interpretation of inflation-related indicators through clear visual exploration.
+              </p>
+              <ul class="tag-list">
+                <li>R</li>
+                <li>Shiny</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://monneyvalentin.shinyapps.io/fsoapp/" target="_blank" rel="noreferrer">Live dashboard</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="img/Machine Learning.png" alt="Machine learning notebook for healthcare triage prediction.">
+            <div class="project-content">
+              <p class="project-label">Applied Machine Learning</p>
+              <h3>Healthcare Triage Classification (South Africa)</h3>
+              <p>
+                Developed a machine learning workflow using questionnaire data to distinguish urgent care needs from lower-priority cases.
+              </p>
+              <p class="impact">
+                <strong>Impact:</strong> Illustrates how predictive models can help prioritize healthcare interventions under resource constraints.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Jupyter Notebook</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://github.com/vmonney/Python/tree/main/EPFL%20machine%20Learning%20Projects/05_Capstone_project" target="_blank" rel="noreferrer">Project details</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="img/wordle.png" alt="Wordle-style web game interface.">
+            <div class="project-content">
+              <p class="project-label">Frontend Engineering</p>
+              <h3>Wordle Clone</h3>
+              <p>
+                Implemented a browser-based game inspired by Wordle to strengthen UI logic and interactive JavaScript development skills.
+              </p>
+              <p class="impact">
+                <strong>Impact:</strong> Demonstrates product-minded implementation, usability focus, and clean front-end execution.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://vmonney.github.io/wordle" target="_blank" rel="noreferrer">Play demo</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <div class="about-layout">
+        <div class="panel">
+          <p>
+            I am a Swiss data professional in my thirties, passionate about transforming data into useful products.
+            I value rigorous methods, practical outcomes, and collaboration with domain experts.
+          </p>
+          <p>
+            Outside of work, I enjoy sports, piano, and humor. I am always open to discussing data projects,
+            analytics opportunities, and collaboration ideas.
+          </p>
+        </div>
+        <img src="img/me.jpg" alt="Portrait of Valentin Monney.">
+      </div>
+    </section>
+
+    <div class="gradient"></div>
+
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2>Let&apos;s Connect</h2>
+        <p>
+          Interested in discussing data engineering, analytics, or a new project opportunity?
+          I would be happy to connect.
+        </p>
+        <a href="mailto:monney.valentin@gmail.com" class="button">Email me</a>
+      </div>
+    </section>
+  </main>
+
   <footer>
-  <h3>Valentin Monney &middot; Data Scientist</h3>
-  <ul>
-    <li>
-        <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank">
-        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-        <span class="sr-only">LinkedIn</span>
-        </a>
-    </li>
-    <li>
-      <a href="https://github.com/vmonney" target="_blank">
-        <span class="fa-brands fa-square-github" aria-hidden="true"></span>
-        <span class="sr-only">Github</span>
-      </a>
-    </li>
-    <li>
-      <a href="mailto: monney.valentin@gmail.com">
-        <span class="fa-solid fa-envelope" aria-hidden="true"></span>
-        <span class="sr-only">Email</span>
-      </a>
-    </li>
-  </ul>
-    <p><small>&copy; 2022 Valentin Monney. All rights reserved.</small></p>
+    <div class="container">
+      <h3>Valentin Monney &middot; Data Scientist / OGD Lead</h3>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/vmonney" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:monney.valentin@gmail.com" aria-label="Email Valentin Monney">
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span class="sr-only">Email</span>
+          </a>
+        </li>
+      </ul>
+      <p><small>&copy; 2026 Valentin Monney. All rights reserved.</small></p>
+    </div>
   </footer>
-
 </body>
 </html>

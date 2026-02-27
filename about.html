@@ -6,93 +6,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&amp;family=Oxygen+Mono&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;family=Oxygen+Mono&amp;display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>About Valentin Monney</title>
+  <title>About | Valentin Monney</title>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
-    <ul>
-      <li>
-        <h1>
-          <a href="index.html">
-            <span class="fa-solid fa-code"></span>
-            <span>Valentin Monney</span>
+  <header>
+    <nav class="container">
+      <ul>
+        <li>
+          <h1>
+            <a href="index.html#intro">
+              <span class="fa-solid fa-database" aria-hidden="true"></span>
+              <span>Valentin Monney</span>
+            </a>
+          </h1>
+        </li>
+        <li><a href="index.html#profile">Profile</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only">LinkedIn</span>
           </a>
-      </h1>
-      </li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank">
-        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-        <span class="sr-only">LinkedIn</span> <!-- This class "sr-only" comes from the fontawesome parameters -->
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/vmonney" target="_blank">
-        <span class="fa-brands fa-square-github" aria-hidden="true"></span>
-        <span class="sr-only">Github</span>
-        </a>
-      </li>
-      <li><a href="https://www.dropbox.com/s/daixna0zchfdsso/Valentin%27s%20Resume.pdf?dl=0" target="_blank" class="button">Resume</a></li>
-    </ul>
-  </nav>
+        </li>
+        <li>
+          <a href="https://github.com/vmonney" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.dropbox.com/scl/fi/iniqycecxhkr7tvbpob9m/Valentin-s-Resume.pdf?rlkey=267fvfzl6abnnce9t6rhfwpyq&amp;st=pgi5zhh5&amp;dl=0" target="_blank" rel="noreferrer" class="button">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <div class="gradient"></div>
 
-  <div class="section-project">
-    <section id="projects">
+  <main id="main-content">
+    <section class="section container">
       <h2>About Valentin Monney</h2>
-
-      <article>
-        <div class="text">
-          <h3>Data enthusiast!</h3>
-          <p class="blackbox">I love anything to do with data, whether it's preparation, visualization or machine learning, it's a pleasure to get involved in code. 
-          Apart from that, I'm a young Swiss man in his thirties who loves sports, piano and humor! Do not hesitate to contact me!
+      <div class="about-layout">
+        <div class="panel">
+          <p>
+            I am a Swiss data professional focused on turning public data into useful, trusted products.
+            I currently work as a Data Scientist and OGD Lead for the canton of Fribourg.
           </p>
-          <h4>My favorite technologies include:</h4>
-          <ul>
-            <li>R</li>
-            <li>Javascript</li>
-            <li>HTML/CSS</li>
-            <li>Python</li>
-          </ul>
+          <p>
+            My day-to-day work combines ETL automation, dashboard development, and data governance.
+            I enjoy collaborating with domain experts to translate complex data into practical decisions.
+          </p>
+          <p>
+            Outside of work, I enjoy sports, piano, and humor.
+            I am always open to discussing data projects and collaboration opportunities.
+          </p>
         </div>
-        <img src="img/me.jpg" alt="A profile picture of Valentin Monney." />
-      </article>
+        <img src="img/me.jpg" alt="Portrait of Valentin Monney.">
+      </div>
     </section>
-  </div>
+  </main>
+
   <div class="gradient"></div>
-  
-  <div class="gradient"></div>
-  
+
   <footer>
-  <h3>Valentin Monney &middot; Data Scientist</h3>
-  <ul>
-    <li>
-        <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank">
-        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-        <span class="sr-only">LinkedIn</span>
-        </a>
-    </li>
-    <li>
-      <a href="https://github.com/vmonney" target="_blank">
-        <span class="fa-brands fa-square-github" aria-hidden="true"></span>
-        <span class="sr-only">Github</span>
-      </a>
-    </li>
-    <li>
-      <a href="mailto: monney.valentin@gmail.com">
-        <span class="fa-solid fa-envelope" aria-hidden="true"></span>
-        <span class="sr-only">Email</span>
-      </a>
-    </li>
-  </ul>
-    <p><small>&copy; 2022 Valentin Monney. All rights reserved.</small></p>
+    <div class="container">
+      <h3>Valentin Monney &middot; Data Scientist / OGD Lead</h3>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/valentin-monney/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/vmonney" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:monney.valentin@gmail.com" aria-label="Email Valentin Monney">
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span class="sr-only">Email</span>
+          </a>
+        </li>
+      </ul>
+      <p><small>&copy; 2026 Valentin Monney. All rights reserved.</small></p>
+    </div>
   </footer>
 
 </body>
