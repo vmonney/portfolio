@@ -288,6 +288,12 @@ nav [class*="fa-"] {
   object-fit: cover;
 }
 
+.project-card img.project-image-contained {
+  object-fit: contain;
+  max-height: 260px;
+  background: #0d1628;
+}
+
 .project-content {
   padding: 1.2rem;
 }
@@ -420,6 +426,11 @@ footer p {
 
   .project-card img {
     height: 100%;
+  }
+
+  .project-card img.project-image-contained {
+    height: auto;
+    max-height: 320px;
   }
 
   .about-layout {
